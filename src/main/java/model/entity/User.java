@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
-    @Id private String license;
-    private String name;
+    @Id private String username;
+    private String password;
+    private String avatar;
 }
