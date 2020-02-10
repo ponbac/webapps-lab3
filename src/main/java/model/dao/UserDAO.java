@@ -10,7 +10,7 @@ import model.entity.User;
 
 @Stateless
 public class UserDAO extends AbstractDAO<User> {
-    @Getter @PersistenceContext(unitName = “socialdb”)
+    @Getter @PersistenceContext(unitName="socialdb")
     private EntityManager entityManager;
 
     public UserDAO() {

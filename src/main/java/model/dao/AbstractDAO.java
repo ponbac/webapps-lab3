@@ -14,11 +14,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public abstract class AbstractDAO<T> {
     private final Class<T> entityType;
-
-    protected AbstractDAO(Class<T> entityType) {   // REMOVE
-        this.entityType = entityType;              // REMOVE
-    }                                              // REMOVE
-
     protected abstract EntityManager getEntityManager();
 
     public long count() {
@@ -55,7 +50,7 @@ public abstract class AbstractDAO<T> {
         final Root<T> rt = update.from(entityType);
         // set update and where clause
         update.set(column, newValue);
-        update.where(builder.greaterThanOrEqualTo(rt.get("amount"), oldAmount));
+        update.where(builder.greaterThanOrEqualTo(rt.get("amount"), newValue));
         // perform update
         getEntityManager().createQuery(update).executeUpdate();
     }
