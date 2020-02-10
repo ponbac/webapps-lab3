@@ -1,14 +1,11 @@
 package model.dao;
 
 import java.util.List;
-
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.CriteriaUpdate;
 import javax.persistence.criteria.Root;
-
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
@@ -42,7 +39,7 @@ public abstract class AbstractDAO<T> {
     }
 
     // TODO: !!!
-    public void update(T entity, String column, String newValue) {
+    /*public void update(T entity, String column, String newValue) {
         final CriteriaBuilder builder = getEntityManager().getCriteriaBuilder();
         // create update
         final CriteriaUpdate<T> update = builder.createCriteriaUpdate(entityType);
@@ -53,5 +50,5 @@ public abstract class AbstractDAO<T> {
         update.where(builder.greaterThanOrEqualTo(rt.get("amount"), newValue));
         // perform update
         getEntityManager().createQuery(update).executeUpdate();
-    }
+    }*/
 }
