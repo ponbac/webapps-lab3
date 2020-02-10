@@ -1,0 +1,1280 @@
+cd /home/pontus53/NetBeansProjects/orm; JAVA_HOME=/usr/lib/jvm/java-11-openjdk /usr/lib/netbeans/java/maven/bin/mvn clean install
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building orm-1.0-SNAPSHOT 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-clean-plugin:2.5:clean (default-clean) @ orm ---
+Deleting /home/pontus53/NetBeansProjects/orm/target
+
+--- maven-dependency-plugin:2.6:copy (default) @ orm ---
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ orm ---
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 1 resource
+
+--- maven-compiler-plugin:3.1:compile (default-compile) @ orm ---
+Changes detected - recompiling the module!
+Compiling 3 source files to /home/pontus53/NetBeansProjects/orm/target/classes
+/home/pontus53/NetBeansProjects/orm/src/main/java/com/ejwa/orm/model/dao/AbstractDAO.java: /home/pontus53/NetBeansProjects/orm/src/main/java/com/ejwa/orm/model/dao/AbstractDAO.java uses unchecked or unsafe operations.
+/home/pontus53/NetBeansProjects/orm/src/main/java/com/ejwa/orm/model/dao/AbstractDAO.java: Recompile with -Xlint:unchecked for details.
+
+--- maven-resources-plugin:2.6:testResources (default-testResources) @ orm ---
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 2 resources
+
+--- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ orm ---
+Changes detected - recompiling the module!
+Compiling 1 source file to /home/pontus53/NetBeansProjects/orm/target/test-classes
+
+--- maven-surefire-plugin:2.12.4:test (default-test) @ orm ---
+Surefire report directory: /home/pontus53/NetBeansProjects/orm/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ejwa.orm.model.dao.CarDAOTest
+Feb 10, 2020 3:57:48 PM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+INFO: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
+Feb 10, 2020 3:57:48 PM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findH2Client
+INFO: Cannot find h2db client jar file, h2 jdbc driver will not be available by default.
+Feb 10, 2020 3:57:48 PM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator null
+Feb 10, 2020 3:57:49 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener http-listener started in: 4ms - bound to [/0.0.0.0:7070]
+Feb 10, 2020 3:57:49 PM org.glassfish.grizzly.http2.Http2AddOn setup
+WARNING: TLS ALPN (Application-Layer Protocol Negotiation) support is not available. HTTP/2 support will not be enabled.
+Feb 10, 2020 3:57:49 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener https-listener started in: 1ms - bound to [/0.0.0.0:8182]
+Feb 10, 2020 3:57:49 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener admin-listener started in: 1ms - bound to [/0.0.0.0:4848]
+Feb 10, 2020 3:57:49 PM com.sun.enterprise.v3.services.impl.GrizzlyService postConstruct
+INFO: Grizzly 2.4.3 started in: 220ms - bound to [http-listener:7070, https-listener:8182, admin-listener:4848]
+Feb 10, 2020 3:57:49 PM com.hazelcast.instance.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Feb 10, 2020 3:57:49 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [development] [3.12] Using bind address: /192.168.0.243:4900
+Feb 10, 2020 3:57:49 PM com.hazelcast.instance.AddressPicker
+INFO: [LOCAL] [development] [3.12] Using public address: /192.168.0.243:4900
+Feb 10, 2020 3:57:49 PM com.hazelcast.system
+INFO: [192.168.0.243]:4900 [development] [3.12] Hazelcast 3.12 (20190409 - 915d83a) starting at [192.168.0.243]:4900
+Feb 10, 2020 3:57:49 PM com.hazelcast.system
+INFO: [192.168.0.243]:4900 [development] [3.12] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+Feb 10, 2020 3:57:49 PM com.hazelcast.instance.Node
+INFO: [192.168.0.243]:4900 [development] [3.12] A non-empty group password is configured for the Hazelcast member. Since version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+Feb 10, 2020 3:57:49 PM com.hazelcast.spi.impl.operationservice.impl.BackpressureRegulator
+INFO: [192.168.0.243]:4900 [development] [3.12] Backpressure is disabled
+Feb 10, 2020 3:57:49 PM com.hazelcast.instance.Node
+INFO: [192.168.0.243]:4900 [development] [3.12] Activating Discovery SPI Joiner
+Feb 10, 2020 3:57:49 PM com.hazelcast.spi.impl.operationexecutor.impl.OperationExecutorImpl
+INFO: [192.168.0.243]:4900 [development] [3.12] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+Feb 10, 2020 3:57:49 PM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.0.243]:4900 [development] [3.12] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Feb 10, 2020 3:57:49 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.0.243]:4900 [development] [3.12] [192.168.0.243]:4900 is STARTING
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.hazelcast.internal.networking.nio.SelectorOptimizer (file:/home/pontus53/.m2/repository/fish/payara/extras/payara-embedded-all/5.194/payara-embedded-all-5.194.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of com.hazelcast.internal.networking.nio.SelectorOptimizer
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Feb 10, 2020 3:57:49 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [192.168.0.243]:4900 [development] [3.12] Connecting to /192.168.0.243:5900, timeout: 10000, bind-any: true
+Feb 10, 2020 3:57:49 PM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [192.168.0.243]:4900 [development] [3.12] Could not connect to: /192.168.0.243:5900. Reason: SocketException[Connection refused to address /192.168.0.243:5900]
+Feb 10, 2020 3:57:49 PM com.hazelcast.internal.cluster.impl.DiscoveryJoiner
+INFO: [192.168.0.243]:4900 [development] [3.12] [192.168.0.243]:5900 is added to the blacklist.
+Feb 10, 2020 3:57:50 PM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.0.243]:4900 [development] [3.12] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.243]:4900 - f79041a8-b5ae-485e-9d40-6f4c3428b5f5 this
+]
+
+Feb 10, 2020 3:57:50 PM com.hazelcast.internal.jmx.ManagementService
+INFO: [192.168.0.243]:4900 [development] [3.12] Hazelcast JMX agent enabled.
+Feb 10, 2020 3:57:51 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.0.243]:4900 [development] [3.12] [192.168.0.243]:4900 is STARTED
+Feb 10, 2020 3:57:51 PM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+INFO: Hazelcast Instance Bound to JNDI at payara/Hazelcast
+Feb 10, 2020 3:57:51 PM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+INFO: JSR107 Caching Provider Bound to JNDI at payara/CachingProvider
+Feb 10, 2020 3:57:51 PM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+INFO: JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager
+Feb 10, 2020 3:57:51 PM com.hazelcast.internal.partition.impl.PartitionStateManager
+INFO: [192.168.0.243]:4900 [development] [3.12] Initializing cluster partition table arrangement...
+Feb 10, 2020 3:57:51 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener iiop-service started in: 1ms - bound to [/0.0.0.0:3700]
+Feb 10, 2020 3:57:51 PM fish.payara.nucleus.cluster.PayaraCluster logClusterStatus
+INFO: Data Grid Status 
+Payara Data Grid State: DG Version: 35 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Instance Group: MicroShoal Name: server Lite: false This: true UUID: f79041a8-b5ae-485e-9d40-6f4c3428b5f5 Address: /192.168.0.243:4900
+}
+Feb 10, 2020 3:57:51 PM com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+INFO: Undefined Product Name - define product and version info in config/branding  0.0.0  (0) startup time : Embedded (797ms), startup services(2,547ms), total(3,344ms)
+Feb 10, 2020 3:57:51 PM fish.payara.nucleus.notification.NotificationService bootstrapNotificationService
+INFO: Payara Notification Service bootstrapped with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=LogNotifierConfigurationExecutionOptions{useSeparateLogFile=false} NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true, noisy=true}}}
+Feb 10, 2020 3:57:51 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread startConnector
+INFO: JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://0.0.0.0:8686/jndi/rmi://0.0.0.0:8686/jmxrmi
+Feb 10, 2020 3:57:51 PM com.sun.enterprise.connectors.jms.util.JmsRaUtil getInstalledMqVersion
+WARNING: Check for a new version of MQ installation failed : /tmp/gfembed467834375844039179tmp/lib/install/applications/jmsra/../imqjmsra.rar:/tmp/gfembed467834375844039179tmp/lib/install/applications/jmsra/imqjmsra.rar
+Feb 10, 2020 3:57:51 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener JMS_PROXY_default_JMS_host started in: 2ms - bound to [/0.0.0.0:7676]
+Feb 10, 2020 3:57:51 PM fish.payara.arquillian.container.payara.embedded.PayaraContainer executeCommand
+INFO: command add-resources parameters[Ljava.lang.String;@770c3ca2 result: PlainTextActionReporterSUCCESSDescription: add-resources AdminCommandnull
+    JDBC connection pool derby_net_academy_appPool created successfully.
+    JDBC resource jdbc/academy created successfully.
+
+Feb 10, 2020 3:57:52 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:52 PM org.glassfish.enterprise.iiop.api.GlassFishORBHelper postConstruct
+INFO: GlassFishORBFactory service initialized.
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+WARNING: The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21877342614735064986586094209008949861633415438321046094865735894101046869669024974234189221129376235137504163448391667494521959302368300673495711648664420351966300087244240539893392975177816108541817252818998001932142985065266407504518566289301698937041931668276581800733716890145024940625536991682725365140451115767110550542345758164504698636529042078537609343076050570785483670809094993963575569689277704991843533760219663288836022206035538841969109577376809337618824179167781883694301066738001489513517818892302945620562766589172426570508291886401623875028645352783701438149952282706361006848685772598444243814369
+  public exponent: 65537
+  Validity: [From: Fri Dec 24 18:50:51 CET 1999,
+               To: Tue Dec 24 19:20:51 CET 2019]
+  Issuer: CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net
+  SerialNumber: [    3863b966]
+
+Certificate Extensions: 4
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 10 30 0E 1B 08 56 35   2E 30 3A 34 2E 30 03 02  ..0...V5.0:4.0..
+0010: 04 90                                              ..
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 55 E4 81 D1 11 80 BE D8   89 B9 08 A3 31 F9 A1 24  U...........1..$
+0010: 09 16 B9 70                                        ...p
+]
+]
+
+[3]: ObjectId: 2.16.840.1.113730.1.1 Criticality=false
+NetscapeCertType [
+   SSL CA
+   S/MIME CA
+   Object Signing CA]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 55 E4 81 D1 11 80 BE D8   89 B9 08 A3 31 F9 A1 24  U...........1..$
+0010: 09 16 B9 70                                        ...p
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 59 47 AC 21 84 8A 17 C9   9C 89 53 1E BA 80 85 1A  YG.!......S.....
+0010: C6 3C 4E 3E B1 9C B6 7C   C6 92 5D 18 64 02 E3 D3  .<N>......].d...
+0020: 06 08 11 61 7C 63 E3 2B   9D 31 03 70 76 D2 A3 28  ...a.c.+.1.pv..(
+0030: A0 F4 BB 9A 63 73 ED 6D   E5 2A DB ED 14 A9 2B C6  ....cs.m.*....+.
+0040: 36 11 D0 2B EB 07 8B A5   DA 9E 5C 19 9D 56 12 F5  6..+......\..V..
+0050: 54 29 C8 05 ED B2 12 2A   8D F4 03 1B FF E7 92 10  T).....*........
+0060: 87 B0 3A B5 C3 9D 05 37   12 A3 C7 F4 15 B9 D5 A4  ..:....7........
+0070: 39 16 9B 53 3A 23 91 F1   A8 82 A2 6A 88 68 C1 79  9..S:#.....j.h.y
+0080: 02 22 BC AA A6 D6 AE DF   B0 14 5F B8 87 D0 DD 7C  ."........_.....
+0090: 7F 7B FF AF 1C CF E6 DB   07 AD 5E DB 85 9D D0 2B  ..........^....+
+00A0: 0D 33 DB 04 D1 E6 49 40   13 2B 76 FB 3E E9 9C 89  .3....I@.+v.>...
+00B0: 0F 15 CE 18 B0 85 78 21   4F 6B 4F 0E FA 36 67 CD  ......x!OkO..6g.
+00C0: 07 F2 FF 08 D0 E2 DE D9   BF 2A AF B8 87 86 21 3C  .........*....!<
+00D0: 04 CA B7 94 68 7F CF 3C   E9 98 D7 38 FF EC C0 D9  ....h..<...8....
+00E0: 50 F0 2E 4B 58 AE 46 6F   D0 2E C3 60 DA 72 55 72  P..KX.Fo...`.rUr
+00F0: BD 4C 45 9E 61 BA BF 84   81 92 03 D1 D2 69 7C C5  .LE.a........i..
+
+]
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.security.SecurityLifecycle <init>
+INFO: Java security manager is disabled.
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: Entering Security Startup Service.
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.security.PolicyLoader installPolicyFromClassName
+INFO: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: Security Service(s) started successfully.
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: Created HTTP listener http-listener on host/port 0.0.0.0:7070
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: Created HTTP listener https-listener on host/port 0.0.0.0:8182
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: Created HTTP listener admin-listener on host/port 0.0.0.0:4848
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer createHosts
+INFO: Created virtual server server
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer createHosts
+INFO: Created virtual server __asadmin
+Feb 10, 2020 3:57:52 PM com.sun.enterprise.web.WebContainer loadSystemDefaultWebModules
+INFO: Virtual server server loaded default web module 
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+INFO: visiting unvisited references
+Feb 10, 2020 3:57:53 PM com.sun.logging.LogDomains getResourceBundle
+INFO: Cannot find the resource bundle for the name com.sun.logging.enterprise.system.util for class com.sun.appserv.ClassLoaderUtil using jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc
+Feb 10, 2020 3:57:53 PM com.sun.appserv.ClassLoaderUtil releaseLoader
+WARNING: classloaderutil.errorReleasingLoader
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.ArrayList jdk.internal.loader.URLClassPath.loaders accessible: module java.base does not "opens jdk.internal.loader" to unnamed module @563f38c4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:340)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:280)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:176)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:170)
+	at com.sun.appserv.ClassLoaderUtil.getField(ClassLoaderUtil.java:308)
+	at com.sun.appserv.ClassLoaderUtil.initForClosingJars(ClassLoaderUtil.java:290)
+	at com.sun.appserv.ClassLoaderUtil.init(ClassLoaderUtil.java:263)
+	at com.sun.appserv.ClassLoaderUtil.releaseLoader(ClassLoaderUtil.java:139)
+	at com.sun.appserv.ClassLoaderUtil.releaseLoader(ClassLoaderUtil.java:111)
+	at org.glassfish.web.loader.WebappClassLoader.stop(WebappClassLoader.java:1870)
+	at org.glassfish.web.loader.WebappClassLoader.preDestroy(WebappClassLoader.java:1831)
+	at org.glassfish.deployment.common.DeploymentContextImpl.getClassLoader(DeploymentContextImpl.java:266)
+	at org.glassfish.deployment.common.DeploymentContextImpl.getClassLoader(DeploymentContextImpl.java:216)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepare(ApplicationLifecycle.java:523)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:538)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:558)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:554)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:361)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:553)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:584)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:576)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:361)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:575)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1496)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1878)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1754)
+	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:137)
+	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:113)
+	at fish.payara.arquillian.container.payara.embedded.PayaraContainer.deploy(PayaraContainer.java:227)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:151)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:118)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:92)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:77)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:232)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:212)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:80)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:171)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Feb 10, 2020 3:57:53 PM org.eclipse.persistence.session./file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy
+INFO: EclipseLink, version: Eclipse Persistence Services - 2.7.4.payara-p2
+Feb 10, 2020 3:57:53 PM org.eclipse.persistence.session./file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy.connection
+INFO: /file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy login successful
+Feb 10, 2020 3:57:54 PM org.glassfish.persistence.common.Java2DBProcessorHelper executeDDLs
+WARNING: PER01000: Got SQLException executing statement "CREATE TABLE CAR (LICENSE VARCHAR(255) NOT NULL, NAME VARCHAR(255), PRIMARY KEY (LICENSE))": java.sql.SQLTransactionRollbackException: Table/View 'CAR' already exists in Schema 'APP'.
+Feb 10, 2020 3:57:54 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.1 (Final)
+Feb 10, 2020 3:57:54 PM com.sun.ejb.containers.BaseContainer initializeHome
+INFO: Portable JNDI names for EJB CarDAO: [java:global/5445f3cb-816e-4859-8d18-0a5072ecda6f/CarDAO!com.ejwa.orm.model.dao.CarDAO, java:global/5445f3cb-816e-4859-8d18-0a5072ecda6f/CarDAO]
+Feb 10, 2020 3:57:54 PM fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl postConstruct
+INFO: Clustered CDI Event bus initialized
+Feb 10, 2020 3:57:54 PM org.glassfish.soteria.servlet.SamRegistrationInstaller onStartup
+INFO: Initializing Soteria null for context '/5445f3cb-816e-4859-8d18-0a5072ecda6f'
+Feb 10, 2020 3:57:54 PM com.sun.enterprise.web.WebApplication start
+INFO: Loading application [5445f3cb-816e-4859-8d18-0a5072ecda6f] at [/5445f3cb-816e-4859-8d18-0a5072ecda6f]
+Feb 10, 2020 3:57:55 PM org.eclipse.persistence.session./file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy
+WARNING: 
+Local Exception Stack: 
+Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.4.payara-p2): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+Error Code: 20000
+Call: INSERT INTO CAR (LICENSE, NAME) VALUES (?, ?)
+	bind => [2 parameters bound]
+Query: InsertObjectQuery(Car(license=IFF780, name=Renault Clio))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:908)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:970)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2096)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:411)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:167)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:182)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:504)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:82)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:92)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:316)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:60)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:914)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:813)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2981)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1895)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1877)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1827)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:229)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:128)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4387)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1493)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1583)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3258)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.sun.enterprise.transaction.JavaEETransactionImpl.commit(JavaEETransactionImpl.java:480)
+	at com.sun.enterprise.transaction.JavaEETransactionManagerSimplified.commit(JavaEETransactionManagerSimplified.java:944)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:666)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:482)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4557)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy258.create(Unknown Source)
+	at com.ejwa.orm.model.dao.__EJB31_Generated__CarDAO__Intf____Bean__.create(Unknown Source)
+	at com.ejwa.orm.model.dao.CarDAOTest.init(CarDAOTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.jboss.arquillian.junit.Arquillian$StatementLifecycleExecutor.invoke(Arquillian.java:404)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.before(EventTestRunnerAdaptor.java:98)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:208)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:223)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:287)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:142)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:281)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:174)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.jboss.arquillian.junit.container.JUnitTestRunner.execute(JUnitTestRunner.java:61)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.executeTest(ServletTestRunner.java:139)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.execute(ServletTestRunner.java:117)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.doGet(ServletTestRunner.java:86)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdate(Unknown Source)
+	at com.sun.gjc.spi.base.PreparedStatementWrapper.executeUpdate(PreparedStatementWrapper.java:127)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:898)
+	... 173 more
+Caused by: ERROR 23505: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+	at org.apache.derby.client.am.ClientStatement.completeExecute(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parseEXCSQLSTTreply(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.StatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.NetPreparedStatement.readExecute_(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.readExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.flowExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdateX(Unknown Source)
+	... 176 more
+
+Feb 10, 2020 3:57:55 PM com.sun.enterprise.transaction.JavaEETransactionImpl commit
+WARNING: enterprise_distributedtx.before_completion_excep
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.4.payara-p2): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+Error Code: 20000
+Call: INSERT INTO CAR (LICENSE, NAME) VALUES (?, ?)
+	bind => [2 parameters bound]
+Query: InsertObjectQuery(Car(license=IFF780, name=Renault Clio))
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl$1.handleException(EntityManagerSetupImpl.java:784)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.handleException(AbstractSynchronizationListener.java:277)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:172)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.sun.enterprise.transaction.JavaEETransactionImpl.commit(JavaEETransactionImpl.java:480)
+	at com.sun.enterprise.transaction.JavaEETransactionManagerSimplified.commit(JavaEETransactionManagerSimplified.java:944)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:666)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:482)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4557)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy258.create(Unknown Source)
+	at com.ejwa.orm.model.dao.__EJB31_Generated__CarDAO__Intf____Bean__.create(Unknown Source)
+	at com.ejwa.orm.model.dao.CarDAOTest.init(CarDAOTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.jboss.arquillian.junit.Arquillian$StatementLifecycleExecutor.invoke(Arquillian.java:404)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.before(EventTestRunnerAdaptor.java:98)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:208)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:223)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:287)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:142)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:281)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:174)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.jboss.arquillian.junit.container.JUnitTestRunner.execute(JUnitTestRunner.java:61)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.executeTest(ServletTestRunner.java:139)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.execute(ServletTestRunner.java:117)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.doGet(ServletTestRunner.java:86)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.4.payara-p2): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+Error Code: 20000
+Call: INSERT INTO CAR (LICENSE, NAME) VALUES (?, ?)
+	bind => [2 parameters bound]
+Query: InsertObjectQuery(Car(license=IFF780, name=Renault Clio))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:908)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:970)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2096)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:411)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:167)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:182)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:504)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:82)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:92)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:316)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:60)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:914)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:813)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2981)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1895)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1877)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1827)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:229)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:128)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4387)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1493)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1583)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3258)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	... 142 more
+Caused by: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdate(Unknown Source)
+	at com.sun.gjc.spi.base.PreparedStatementWrapper.executeUpdate(PreparedStatementWrapper.java:127)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:898)
+	... 173 more
+Caused by: ERROR 23505: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL200210153748080' defined on 'CAR'.
+	at org.apache.derby.client.am.ClientStatement.completeExecute(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parseEXCSQLSTTreply(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.StatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.NetPreparedStatement.readExecute_(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.readExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.flowExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdateX(Unknown Source)
+	... 176 more
+
+Feb 10, 2020 3:57:55 PM com.sun.ejb.containers.BaseContainer postInvoke
+WARNING: A system exception occurred during an invocation on EJB CarDAO, method: public void com.ejwa.orm.model.dao.AbstractDAO.create(java.lang.Object)
+Feb 10, 2020 3:57:55 PM com.sun.ejb.containers.BaseContainer postInvoke
+WARNING: 
+javax.ejb.EJBException: java.lang.NullPointerException: Cannot suppress a null exception.
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2115)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy258.create(Unknown Source)
+	at com.ejwa.orm.model.dao.__EJB31_Generated__CarDAO__Intf____Bean__.create(Unknown Source)
+	at com.ejwa.orm.model.dao.CarDAOTest.init(CarDAOTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.jboss.arquillian.junit.Arquillian$StatementLifecycleExecutor.invoke(Arquillian.java:404)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.before(EventTestRunnerAdaptor.java:98)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:208)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:223)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:287)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:142)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:281)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:174)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.jboss.arquillian.junit.container.JUnitTestRunner.execute(JUnitTestRunner.java:61)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.executeTest(ServletTestRunner.java:139)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.execute(ServletTestRunner.java:117)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.doGet(ServletTestRunner.java:86)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException: Cannot suppress a null exception.
+	at java.base/java.lang.Throwable.addSuppressed(Throwable.java:1057)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:674)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:482)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4557)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	... 135 more
+
+Feb 10, 2020 3:57:55 PM org.eclipse.persistence.session./file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy.connection
+INFO: /file:/tmp/gfembed467834375844039179tmp/applications/5445f3cb-816e-4859-8d18-0a5072ecda6f/WEB-INF/classes/_academy logout successful
+Feb 10, 2020 3:57:55 PM com.sun.logging.LogDomains getResourceBundle
+INFO: Cannot find the resource bundle for the name com.sun.logging.enterprise.system.util for class com.sun.appserv.ClassLoaderUtil using jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc
+Feb 10, 2020 3:57:55 PM com.sun.appserv.ClassLoaderUtil releaseLoader
+WARNING: classloaderutil.errorReleasingLoader
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.ArrayList jdk.internal.loader.URLClassPath.loaders accessible: module java.base does not "opens jdk.internal.loader" to unnamed module @563f38c4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:340)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:280)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:176)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:170)
+	at com.sun.appserv.ClassLoaderUtil.getField(ClassLoaderUtil.java:308)
+	at com.sun.appserv.ClassLoaderUtil.initForClosingJars(ClassLoaderUtil.java:290)
+	at com.sun.appserv.ClassLoaderUtil.init(ClassLoaderUtil.java:263)
+	at com.sun.appserv.ClassLoaderUtil.releaseLoader(ClassLoaderUtil.java:139)
+	at com.sun.appserv.ClassLoaderUtil.releaseLoader(ClassLoaderUtil.java:111)
+	at org.glassfish.web.loader.WebappClassLoader.stop(WebappClassLoader.java:1870)
+	at org.glassfish.web.loader.WebappClassLoader.preDestroy(WebappClassLoader.java:1831)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.preDestroy(ServiceLocatorImpl.java:1052)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.preDestroy(ServiceLocatorImpl.java:1036)
+	at org.glassfish.internal.data.ApplicationInfo.clean(ApplicationInfo.java:440)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.unload(ApplicationLifecycle.java:1183)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.undeploy(ApplicationLifecycle.java:1211)
+	at org.glassfish.deployment.admin.UndeployCommand.execute(UndeployCommand.java:416)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:558)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:554)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:361)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:553)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:584)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:576)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:361)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:575)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1496)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1878)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1754)
+	at com.sun.enterprise.admin.cli.embeddable.CommandExecutorImpl.executeCommand(CommandExecutorImpl.java:183)
+	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.undeploy(DeployerImpl.java:165)
+	at fish.payara.arquillian.container.payara.embedded.PayaraContainer.undeploy(PayaraContainer.java:266)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:186)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:170)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeploy(ContainerDeployController.java:170)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:111)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:104)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:232)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployedDeployment(ContainerDeployController.java:220)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeployManaged(ContainerDeployController.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor71.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterClass(EventTestRunnerAdaptor.java:86)
+	at org.jboss.arquillian.junit.Arquillian$3$1.evaluate(Arquillian.java:191)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Feb 10, 2020 3:57:55 PM com.sun.enterprise.admin.cli.embeddable.DeployerImpl undeploy
+INFO: 5445f3cb-816e-4859-8d18-0a5072ecda6f was successfully undeployed
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.734 sec <<< FAILURE!
+checkThatFindCarsMatchingNameMatchesCorrectly(com.ejwa.orm.model.dao.CarDAOTest)  Time elapsed: 0.213 sec  <<< ERROR!
+javax.ejb.EJBException: java.lang.NullPointerException: Cannot suppress a null exception.
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2115)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy258.create(Unknown Source)
+	at com.ejwa.orm.model.dao.__EJB31_Generated__CarDAO__Intf____Bean__.create(Unknown Source)
+	at com.ejwa.orm.model.dao.CarDAOTest.init(CarDAOTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.jboss.arquillian.junit.Arquillian$StatementLifecycleExecutor.invoke(Arquillian.java:404)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.before(EventTestRunnerAdaptor.java:98)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:208)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:223)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:287)
+	at org.jboss.arquillian.container.test.impl.execution.BeforeLifecycleEventExecuter.on(BeforeLifecycleEventExecuter.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:142)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:281)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:174)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:376)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:185)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:140)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.jboss.arquillian.junit.container.JUnitTestRunner.execute(JUnitTestRunner.java:61)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.executeTest(ServletTestRunner.java:139)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.execute(ServletTestRunner.java:117)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.doGet(ServletTestRunner.java:86)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException: Cannot suppress a null exception.
+	at java.base/java.lang.Throwable.addSuppressed(Throwable.java:1057)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:674)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:482)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4557)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	... 135 more
+
+Feb 10, 2020 3:57:55 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread shutdown
+INFO: JMXStartupService: Stopped JMXConnectorServer: null
+Feb 10, 2020 3:57:55 PM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
+INFO: JMXStartupService and JMXConnectors have been shut down.
+Feb 10, 2020 3:57:55 PM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: Hazelcast Instance Unbound from JNDI at payara/Hazelcast
+Feb 10, 2020 3:57:55 PM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider
+Feb 10, 2020 3:57:55 PM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: JSR107 Cache Manager Unbound from JNDI at payara/CacheManager
+Feb 10, 2020 3:57:55 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.0.243]:4900 [development] [3.12] [192.168.0.243]:4900 is SHUTTING_DOWN
+Feb 10, 2020 3:57:55 PM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.0.243]:4900 [development] [3.12] Shutdown request of Member [192.168.0.243]:4900 - f79041a8-b5ae-485e-9d40-6f4c3428b5f5 this is handled
+Feb 10, 2020 3:57:55 PM com.hazelcast.instance.Node
+INFO: [192.168.0.243]:4900 [development] [3.12] Shutting down connection manager...
+Feb 10, 2020 3:57:55 PM com.hazelcast.instance.Node
+INFO: [192.168.0.243]:4900 [development] [3.12] Shutting down node engine...
+Feb 10, 2020 3:57:55 PM com.hazelcast.instance.NodeExtension
+INFO: [192.168.0.243]:4900 [development] [3.12] Destroying node NodeExtension.
+Feb 10, 2020 3:57:55 PM com.hazelcast.instance.Node
+INFO: [192.168.0.243]:4900 [development] [3.12] Hazelcast Shutdown is completed in 21 ms.
+Feb 10, 2020 3:57:55 PM com.hazelcast.core.LifecycleService
+INFO: [192.168.0.243]:4900 [development] [3.12] [192.168.0.243]:4900 is SHUTDOWN
+Feb 10, 2020 3:57:55 PM fish.payara.nucleus.hazelcast.HazelcastCore shutdownHazelcast
+INFO: Shutdown Hazelcast
+JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]
+Feb 10, 2020 3:57:55 PM com.sun.enterprise.connectors.service.ResourceAdapterAdminServiceImpl sendStopToResourceAdapter
+INFO: ra.stop-successful
+Feb 10, 2020 3:57:55 PM com.sun.enterprise.v3.server.AppServerStartup stop
+INFO: Shutdown procedure finished
+
+Results :
+
+Tests in error: 
+  checkThatFindCarsMatchingNameMatchesCorrectly(com.ejwa.orm.model.dao.CarDAOTest): java.lang.NullPointerException: Cannot suppress a null exception.
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+------------------------------------------------------------------------
+BUILD FAILURE
+------------------------------------------------------------------------
+Total time: 10.511 s
+Finished at: 2020-02-10T15:57:55+01:00
+Final Memory: 17M/67M
+------------------------------------------------------------------------
+Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project orm: There are test failures.
+
+Please refer to /home/pontus53/NetBeansProjects/orm/target/surefire-reports for the individual test results.
+-> [Help 1]
+
+To see the full stack trace of the errors, re-run Maven with the -e switch.
+Re-run Maven using the -X switch to enable full debug logging.
+
+For more information about the errors and possible solutions, please read the following articles:
+[Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
